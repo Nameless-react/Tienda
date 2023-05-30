@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.paragrah {
+    font-size: 3rem;
+    background-color: #eee;
+    padding: 10rem 5rem;
+    margin: 1rem 20%;
+    border-radius: 25px;
+    border: .0001rem solid #000;
+    box-shadow: 5px 10px 24px #0002;
+}
+
+.navbar {
+    background: #eee;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    gap: 2rem;
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+}
+
+.link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+li:first-child {
+    margin-right: auto; 
+}
+
+
+.scroll {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#abajo {
+    font-size: 4rem;
+    text-align: center;
+}
