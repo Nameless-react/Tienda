@@ -50,3 +50,15 @@ li:first-child {
     font-size: 4rem;
     text-align: center;
 }
+
+:root {
+    --blue: #00f;
+}
+
+a:hover {
+    color: #7070fe;
+}
+
+a {
+    text-decoration: none;
+}
