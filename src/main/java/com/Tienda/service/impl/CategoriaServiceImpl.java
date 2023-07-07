@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.Tienda.categoriaServiceImpl;
+package com.Tienda.service.impl;
 
 import com.Tienda.dao.CategoriaDao;
 import com.Tienda.domain.Categoria;
@@ -28,9 +28,7 @@ public class CategoriaServiceImpl implements CategoriaService {
     public List<Categoria> getCategorias(boolean activos) {
         List<Categoria> categorias = categoriaDao.findAll();
         
-        if (activos) categorias.removeIf(categoria -> !categoria.isActivo());
-        
-        
+        if (activos) categorias.removeIf(categoria -> !categoria.isActivo());        
         return categorias;
     }
     

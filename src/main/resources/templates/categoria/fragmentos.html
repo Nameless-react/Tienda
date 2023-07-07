@@ -150,7 +150,7 @@
                                                     <label for="imagen">[[#{categoria.rutaImagen}]]</label>
                                                     <input class="form-control" type="file" name="imagenFile"
                                                            onchange="readURL(this);" />
-                                                    <img id="blah" th:src="@{${categoria.rutaImagen}}" alt="your image" height="200"/>
+                                                    <img id="blah" th:src="*{rutaImagen}" alt="your image" height="200"/>
                                                 </div>
                                             </div>
                                         </div>
