@@ -6,7 +6,11 @@ package com.Tienda.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
+import jakarta.persistence.JoinColumn;
+import lombok.NoArgsConstructor;
+import jakarta.persistence.OneToMany;
 
 /**
  *
@@ -14,6 +18,7 @@ import lombok.Data;
  */
 @Data
 @Entity
+@NoArgsConstructor
 @Table(name = "categoria")
 public class Categoria implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -25,7 +30,9 @@ public class Categoria implements Serializable {
     private String rutaImagen;
     private boolean activo;
     
-    public Categoria() {}
+    @OneToMany
+    @JoinColumn(name = "id_categoria")
+    List<Producto> productos;
     
     public Categoria(String descripcion, String rutaImagen, boolean activo) {
         this.descripcion = descripcion;
