@@ -22,6 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @author joel
  */
 @Controller
+@RequestMapping("usuario")
 public class UsuarioController {
 
     @Autowired

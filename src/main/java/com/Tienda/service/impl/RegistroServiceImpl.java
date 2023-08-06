@@ -170,8 +170,10 @@ public class RegistroServiceImpl implements RegistroService {
                 null, Locale.getDefault());
         mensaje = String.format(
                 mensaje, usuario.getNombre(), 
-                usuario.getApellidos(), servidor, 
+                usuario.getApellidos(), "http://" + servidor, 
                 usuario.getUsername(), clave);
+        
+        System.out.println(mensaje);
         String asunto = messageSource.getMessage(
                 "registro.mensaje.activacion", 
                 null, Locale.getDefault());
@@ -185,7 +187,7 @@ public class RegistroServiceImpl implements RegistroService {
                 Locale.getDefault());
         mensaje = String.format(
                 mensaje, usuario.getNombre(), 
-                usuario.getApellidos(), servidor, 
+                usuario.getApellidos(), "http://" + servidor, 
                 usuario.getUsername(), clave);
         String asunto = messageSource.getMessage(
                 "registro.mensaje.recordar", 
