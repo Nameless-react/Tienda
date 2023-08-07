@@ -34,7 +34,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
+        
 @Service
 public class ReporteServiceImpl implements ReporteService {
 
@@ -56,7 +56,7 @@ public class ReporteServiceImpl implements ReporteService {
             }
 
             //La ruta dentro de "default package"
-            String reportePath = "reportes";
+            String reportePath = "Reportes";
             //En salida quedarà el reporte ya generado...
             ByteArrayOutputStream salida = new ByteArrayOutputStream();
 
